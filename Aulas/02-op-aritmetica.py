@@ -1,43 +1,58 @@
-#soma
-print (7 + 5)
+# %% 1. Soma
+print(7 + 5)
 
-#concatenação
+
+# %% 2. Concatenação
 print('7' + '5')
 
-#subtração
+
+# %% 3. Subtração
 print(7 - 5)
 
-#divisão
+
+# %% 4. Divisão
 print(7 / 5)
 
-#multiplicação
+
+# %% 5. Multiplicação
 print(7 * 5)
 
-#potencia
-print( 7 ** 5)
 
-#divisão inteira
-print (7 // 5)
+# %% 6. Potência
+print(7 ** 5)
 
-#resto da divisão
+
+# %% 7. Divisão inteira
+print(7 // 5)
+
+
+# %% 8. Resto da divisão
 print(7 % 5)
 
-#apredendo erros
-#print('7' + 5)
 
-#apredendo erros
-#print(7 + '5')
+# %% 9. Aprendendo com erros
+
+# print('7' + 5)
 
 
-#str + operadores
+# %% 10. Aprendendo com erros
+
+# print(7 + '5')
+
+
+# %% 11. Strings + operadores
 print(7 * '\nbreno')
 
+
+# %% 12. Separadores e apresentação
 print('-' * 40)
 print('nome completo: Breno B B')
 print('-' * 40)
 
 
-#imc
+# %% 13. Cálculo de IMC
 print(75.3 / 1.83 ** 2)
 
-print ('imc:', 75.3 / 1.83 ** 2)
+
+# %% 14. IMC com identificação
+print('imc:', 75.3 / 1.83 ** 2)
