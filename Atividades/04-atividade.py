@@ -55,11 +55,21 @@ else:
 
 # %% 5. Comparação de números:
 #Peça dois números inteiros. Se forem iguais, exiba “Números iguais”; caso contrário, exiba “Números diferentes”.
+comp_n = int(input('Digite um número: '))
+comp_n1 = int(input('Digite um número: '))
 
+if comp_n == comp_n1:
+    print('Números iguais')
+else:
+    print('números diferentes')
 
 # %% 6. Controle de temperatura:
 #Peça a temperatura atual em graus Celsius. Se for maior ou igual a 30, exiba “Dia quente”; caso contrário, exiba “Temperatura amena”.
-
+grau_cls = float(input('Digite quantos Graus Celsius está hoje: '))
+if grau_cls >= 30:
+    print('Dia quente')
+else:
+    print('Temperatura amena')
 
 # %% 7. Multas de trânsito:
 #Crie um programa que solicite ao usuário o limite de velocidade da via e a velocidade registrada pelo radar. Utilize if, elif e else para verificar se houve multa, classificar a infração e informar a quantidade de pontos na CNH.
@@ -68,7 +78,15 @@ else:
 #De 61 a 72 km/h: infração média (4 pontos).
 #De 73 a 90 km/h: infração grave (5 pontos).
 #Acima de 90 km/h: infração gravíssima (7 pontos).
-
+limit_vel = int(input('Digite sua velocidade na pista: '))
+if limit_vel <= 60:
+    print('Sem multa! (0 Pontos)')
+elif limit_vel < 73:
+    print('Infração Média! (4 pontos)')
+elif limit_vel <= 90 :
+    print('Infração Grave! (5 pontos)' )
+else:
+    print('Infração gravíssima (7 pontos)')
 
 
 # %% 8. Classificação de Salário:
@@ -76,7 +94,15 @@ else:
 #Média renda: (R$1500 a R$5000)
 #Alta renda: (R$5000 a R10000)
 #Renda muito alta:(acima de R$10000)).
-
+salario= float(input('Digite o seu valor mensal: '))
+if salario < 1500:
+    print('Baixa renda')
+elif salario < 5000:
+    print('Média renda')
+elif salario <= 10000:
+    print('Alta renda')
+else:
+    print('Renda muito alta')
 
 
 # %% 9. Desafio Bónus

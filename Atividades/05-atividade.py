@@ -82,6 +82,14 @@ print(f'Você digitou {quanti_n - 1}')
 # %% 4. Média de notas:
 #Crie um programa em Python que solicite ao usuário 4 notas de um aluno.
 #Utilize um laço for para receber as notas e calcular a média aritmética. Ao final, exiba a média calculada.
+soma = 0
+
+for i in range(1, 5):
+    num = int(input('Digite uma nota: '))
+    soma += num
+    
+media = soma / 4
+print(f'A média das notas foi: {media}')
 
 
 
@@ -96,3 +104,20 @@ print(f'Você digitou {quanti_n - 1}')
 #Contar quantas tentativas o usuário realizou. 
 #Quando o usuário acertar, exibir uma mensagem de parabéns e informar o número total de tentativas realizadas. 
 #Desafio: inicialize um contador antes do laço while e atualize seu valor a cada palpite.
+from random import randint
+num_pc = randint(1,20)
+tentativas = 0
+
+while True:
+    num5 = int(input('Adivinhe o número de 1 a 20: '))
+    tentativas += 1
+    if num5 == num_pc:
+        print(f'Você acertou em {tentativas} tentativas! O número era {num_pc}')
+        break
+    else:
+        print('Tente novamente.')
+    if num_pc > num5:
+        print(f'🔼 O número sorteado é maior 🔼')
+    else:
+        print(f'🔽 O número sorteado é menor 🔽')
+print(f'Fim')
